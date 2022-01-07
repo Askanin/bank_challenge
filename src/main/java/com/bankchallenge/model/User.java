@@ -7,6 +7,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
+@Table(name = "USUARIO")
 @Data
 public class User {
 
@@ -14,11 +15,11 @@ public class User {
     @GeneratedValue (generator = "UUID")
     @GenericGenerator(name="UUID", strategy = "org.hibernate.id.UUIDGenerator")
     @Column(name = "id", updatable = false, nullable = false)
-    private int id;
+    private String id;
     private String name;
     private String email;
     private String password;
-    @OneToMany
-    private List<Phone> phones;
+//    @OneToMany
+//    private List<Phone> phones;
 
 }
