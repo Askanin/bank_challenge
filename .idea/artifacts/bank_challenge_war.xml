@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="bank_challenge:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>bank_challenge</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="bank_challenge-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="bank_challenge:war exploded" />
+    </root>
+  </artifact>
+</component>
